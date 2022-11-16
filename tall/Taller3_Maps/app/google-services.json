@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "656802087014",
+    "project_id": "taller3-cm",
+    "storage_bucket": "taller3-cm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656802087014:android:7fe6acb9d9e4a3cd576da7",
+        "android_client_info": {
+          "package_name": "edu.puj.taller3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656802087014-09ms5khtt831kdd7s0gg8m9n0du4ijrj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-qDCVQso6HrnJHvuXFlBfe47atXWp46Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656802087014-09ms5khtt831kdd7s0gg8m9n0du4ijrj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,22 @@
+services:
+  mongo:
+    image: mongo
+    container_name: my-mongo
+  parse-server:
+    image: parseplatform/parse-server
+    container_name: my-parse-server
+    ports:
+      - 1337:1337
+    links:
+      - mongo:my-mongo
+    command: --appId myappid --masterKey mymasterkey --databaseURI mongodb://mongo/test --startLiveQueryServer --liveQuery "{\"classNames\":[\"SmartUser\"]}"
+    depends_on:
+      - mongo
+  parse-dashboard:
+    image: parseplatform/parse-dashboard
+    container_name: my-parse-dashboard
+    ports: 
+      - 4040:4040
+    command: --dev --appId myappid --masterKey mymasterkey --serverURL "http://localhost:1337/parse"
+    depends_on:
+      - parse-server

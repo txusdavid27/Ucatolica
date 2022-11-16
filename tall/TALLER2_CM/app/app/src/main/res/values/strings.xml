@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">trasla</string>
+    <string name="universidad_javeriana">Universidad Javeriana</string>
+    <string name="camara">Camara</string>
+    <string name="seleccionar_imagen">Seleccionar imagen</string>
+    <string name="title_activity_google_maps">GoogleMapsActivity</string>
+    <string name="title_activity_maps_activityccc">MapsActivityccc</string>
+</resources>

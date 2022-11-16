@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GoogleMapsActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <EditText
+        android:id="@+id/eLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_corner"
+        android:hint="Ingrese una dirección..."
+        android:imeOptions="actionSend"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_gravity="left"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginRight="15dp"
+
+        android:background="@drawable/round_corner" />
+
+    <Button
+        android:id="@+id/btnRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reco"
+        android:layout_gravity="right"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginRight="100dp"
+
+        android:background="@drawable/round_corner" />
+
+
+
+</FrameLayout>
+
